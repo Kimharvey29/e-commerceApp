@@ -1,0 +1,21 @@
+public folder - used for adding publicly available files such as images.
+src folder - the source folder containing files used in development like index.js, index.css and so on and so forth.
+index.js file - this is considered as the top level element for rendering all components app.
+index.css - is used as the global css file for the application.
+App.js - serves as the main component where all other components will be added.
+App.css is a css file that can be used for styling individual.
+index.html is the entry point of the application where index.js file is loaded into.
+
+These are the files that we need to remove:
+App.css
+App.test.js
+index.css
+logo.svg
+reportWebVitals.js
+setupTest.js
+
+Create react application:
+npx create-react-app <AppName>
+
+To run the react application:
+npm start

@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.cardHighlight{
+	min-height: 100%;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 380px; /* Fixed height for the card */
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Ensuring the image fits well */
+.product-card img {
+    height: 150px;  /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    width: 100%;     /* Makes sure the image width fits the card */
+}
+
+/* Product name styling */
+.product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Description styling */
+.description-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #777;
+}
+
+.description-scroll {
+    max-height: 40px;  /* Set a fixed height for the description */
+    overflow-y: auto;  /* Enable scrolling if the description is too long */
+    padding-right: 10px; /* Add padding for better readability */
+    text-overflow: ellipsis; /* Adds ellipsis when the text overflows */
+}
+
+/* Price styling */
+.price-title {
+	margin-top: auto;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #777;
+}
+
+.product-price {
+	padding: 0px;
+    font-size: .8rem;
+    color: #007bff; /* Highlight price in blue */
+}
+
+/* Card Body */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-grow: 1; /* Ensures content takes available space */
+}
+
+
+ /* Base button color (grey) */
+.quantity-btn, .remove-btn, .checkout-btn, .clear-btn .edit-cart-btn {
+    background-color: #3a3939; /* Grey background */
+    color: #ffffff; /* White text for contrast */
+    border: 2px solid #3a3939; /* Border matching the button background */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for background and border color */
+  }
+  
+  /* Button hover effect: grey to black */
+  .quantity-btn:hover, .remove-btn:hover, .checkout-btn:hover, .clear-btn:hover {
+    background-color: #000000; /* Black background on hover */
+    border-color: #000000; /* Black border on hover */
+    color: #ffffff; /* White text for better contrast on black background */
+  }
+  
+  .cart-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+  }
+  
+  .remove-btn, .checkout-btn, .clear-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
